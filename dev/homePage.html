@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="home">Political News</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="home">Home</a></li>
+      <li><a routerLink="">About</a></li>
+      <li><a routerLink="services">Services</a></li>
+      <li><a routerLink="Logout" (click)="clickLogout()">LogOut</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet>
+    <h1>Hello from the {{ componentName }}!</h1>
+    <ul *ngFor="#f of friends">
+      <h3>Title:{{f.newstitle}}</h3>
+      <h4>Description:{{f.newsdescription}}</h4>
+      <h5>Date:{{f.newspostdate}}</h5>
+      <br>
+     </ul>`
+  </router-outlet>
+</div>
+<div class="footer">
+  <div class="panel-footer">
+    <p align="center">Copyright © 2017 ankiom.com</p>
+  </div>
+</div>
+
